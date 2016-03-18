@@ -61,27 +61,35 @@ Advanced Games Engineering(SET10110) \\
 \section{Introduction}
 The aim of this report and following implementation is to create a game with that conforms to industry standards and contains an agreed list of key functions the report will be used to detail current features and list future work for the next milestone.
 
-This project was initially based as a group however this has now been reduced to a solo implementation which has strained the developement process however the focus for the remainder of the project will be on key features for playability of the game.     
+This project was initially based as a group however this has now been reduced to a solo implementation which has strained the developement process due to the splitting of work and use of engine developed by the group however the focus for the remainder of the project will be on key features for playability of the game.     
 
-The game itself is currently unnamed but the original idea was for the game to be a 3d space based racer with area's for both racing and free flight with multi-player functionality  
+The game itself is currently unnamed but the original idea was for the game to be a 3d space based racer with area's for both racing and free flight with multi-player functionality this will feature a split screen mode.   
 
 \section{Current features}
-The game currently features a full menu system and debug overlay as shown in \ref{fig:mainmenu} in terms of graphical content there is model loading and rendering functionality with a variety of basic shaders. 
+The game currently features a full menu system including the help menu and ability to render the current controls which is shown below:
 
-There are multiple input methods including command parsing using the command line there is also gamepad input and keyboard handling which allows for movement of the player with velocity based integration. 
+\begin{figure}[ht!]
+  \includegraphics[height=1.3in]{images/helpmenu}
+  \caption{This shows the help menu and controls}
+  \label{fig:helpmenu}
+\end{figure}
 
+There is graphical developments such as model loading mesh and font rendering with a variety of basic shaders to allow this will be developed further towards the final release to improve the look of the game.  
+\nolinebreak
+\\\\There are multiple input methods including command parsing using the command line there is also gamepad input and keyboard handling which allows for movement of the player with velocity based integration.
+\nolinebreak
+\\\\There is basic sound loading and playing functionality provided by the FMOD API. 
+\nolinebreak
+\\\\The red plane shown in \ref{fig:mainmenu} is redrawn based on the current position of the player this gives the effect of a horizon and will be utilised to spearate the racing and flying elements of the game.
 
-The red plane shown in \ref{fig:mainmenu} is redrawn based on the current 
 \section{features for milestone 3}
+As work continues towards the next milestone the main focus will be getting the racing and flying elements implemented with start and end point to give the game an end state and AI to give the player competition also as shown in \ref{fig:planning} there are some features which have been selected to be excluded from the game as these are non key components as they add to the game rather than add gameplay elements. 
 
-
-\section{Conclusion}
-
-
-
-% \section*{Acknowledgements}
-\bibliographystyle{acmsiggraph}
-\bibliography{report}
+\begin{figure}[ht!]
+	\includegraphics[height=6.0in]{images/planning}
+	\caption{This is full feature list and weekly progress}
+	\label{fig:planning}
+\end{figure}
 
 \end{document}
 
